@@ -61,12 +61,12 @@ def kotesh():
     logging.info(f"{request.remote_addr} - - [{time.strftime('%d/%b/%Y %H:%M:%S')}] \"{request.method} {url} {request.environ.get('SERVER_PROTOCOL')}\" {user_agent}")
     return "<h1><center>Hi Kotesh how are you feeling today, Habiby come to dubai</center></h1>"
 
-@app.route("/videos")
-def videos():
+@app.route("/koteshcontent")
+def koteshcontent():
     user_agent = request.headers.get('User-Agent')
     url = request.url
     logging.info(f"{request.remote_addr} - - [{time.strftime('%d/%b/%Y %H:%M:%S')}] \"{request.method} {url} {request.environ.get('SERVER_PROTOCOL')}\" {user_agent}")
-    return "<h1><center>I don't what is kubelet and what we explore from kubelet logs</center></h1>"
+    return "<h1><center>I don't no what is kubelet and what we can explore from kubelet logs, really I am stuppid guy</center></h1>"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
